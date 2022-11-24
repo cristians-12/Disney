@@ -1,0 +1,42 @@
+.container-fluid{
+    margin: 0 0 0 0;
+    width: 100%;
+}
+body::-webkit-scrollbar {
+    width: 5px;               /* width of the entire scrollbar */
+}
+
+body{
+    background-color: rgb(2, 2, 20);
+    padding-top: 2%;
+}
+
+
+.col{
+    
+    padding: 0 2px;
+}
+.contimgs{
+    position: relative;
+    animation-name: inicio;
+    animation-duration: 3s;
+}
+
+@keyframes inicio{
+    0%{left:-100%;}
+    100%{left:0%}
+}
+
+.imgs{
+    width: 90%;
+    cursor: pointer;
+    /* position: absolute; */
+}
+.imgs:hover{
+    width: 100%;
+    transition: width 100ms linear 100ms;
+    box-shadow: 10px 10px 10px black;
+}
+.logo{
+    width: 10%;
+}
